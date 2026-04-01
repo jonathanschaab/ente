@@ -7,6 +7,7 @@ import (
 )
 
 func TestNewS3Config(t *testing.T) {
+	viper.Reset()
 	viper.Set("s3.b2-eu-cen.key", "my-key")
 	viper.Set("s3.b2-eu-cen.secret", "my-secret")
 	viper.Set("s3.b2-eu-cen.endpoint", "http://localhost:9000")
@@ -26,6 +27,7 @@ func TestNewS3Config(t *testing.T) {
 }
 
 func TestNewS3ConfigWithToken(t *testing.T) {
+	viper.Reset()
 	viper.Set("s3.b2-eu-cen.key", "my-key")
 	viper.Set("s3.b2-eu-cen.secret", "my-secret")
 	viper.Set("s3.b2-eu-cen.token", "my-token")
