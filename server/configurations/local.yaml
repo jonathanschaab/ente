@@ -158,6 +158,7 @@ s3:
         # use_path_style_urls: true
         key:
         secret:
+        # token: ""
         endpoint:
         region:
         bucket:
@@ -166,6 +167,7 @@ s3:
         # use_path_style_urls: true
         key:
         secret:
+        # token: ""
         endpoint:
         region:
         bucket:
@@ -179,12 +181,14 @@ s3:
         # use_path_style_urls: true
         key:
         secret:
+        # token: ""
         endpoint:
         region:
         bucket:
     wasabi-eu-central-2-derived:
         key:
         secret:
+        # token: ""
         endpoint:
         region:
         bucket:

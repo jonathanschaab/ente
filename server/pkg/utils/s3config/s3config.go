@@ -132,7 +132,7 @@ func (config *S3Config) initialize() {
 		config.buckets[dc] = viper.GetString("s3." + dc + ".bucket")
 		s3Config := aws.Config{
 			Credentials: credentials.NewStaticCredentials(viper.GetString("s3."+dc+".key"),
-				viper.GetString("s3."+dc+".secret"), ""),
+				viper.GetString("s3."+dc+".secret"), viper.GetString("s3."+dc+".token")),
 			Endpoint: aws.String(viper.GetString("s3." + dc + ".endpoint")),
 			Region:   aws.String(viper.GetString("s3." + dc + ".region")),
 		}
